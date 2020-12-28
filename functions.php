@@ -6,7 +6,8 @@
         wp_enqueue_style('mainstyles', get_stylesheet_uri());
         wp_enqueue_style('fonts', '//fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
         wp_enqueue_style('fontawesome', '//pro.fontawesome.com/releases/v5.10.0/css/all.css');
-        wp_enqueue_script('scripts', get_theme_file_uri('./js/scripts.js'), NULL, true);
+        wp_enqueue_script('script', get_theme_file_uri('./js/scripts.js'), NULL, true);
+        wp_enqueue_script('hamburger', get_theme_file_uri('./js/hamburger.js'), NULL, true);
 
     }
 

@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    const latestnews = document.querySelector('.latest__news')
-    const latestblog = document.querySelector('.latest__blog')
+
+    const latestnews = document.querySelector('.latest__news');
+    const latestblog = document.querySelector('.latest__blog');
     const minNewsNumber = checkLatestNewsNum();
     const minPostNumber = checkLatestBlogNum();
 
@@ -53,11 +54,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     hideLatestNewsCointainer();
     hideLatestPostContainer();
-
-
-
-
-
 
 
 })

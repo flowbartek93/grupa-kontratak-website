@@ -14,14 +14,16 @@
 
     <header class="header">
 
-        <div class="header__top">
 
-        </div>
         <div class="header__center">
 
-            <img class="header__image" src="<?php  echo get_theme_file_uri('./images/headermain.jpg');?>" alt="header">
+            <div class="header__mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <img class="header__image header--small" src="<?php  echo get_theme_file_uri('./images/headermain.jpg');?>"
+                alt="header">
             <div class="header__logo">
-                <img class="header__logo--img" src="<?php echo get_theme_file_uri('./images/logonapis5.png');?>"
+                <img class="header__logo-img" src="<?php echo get_theme_file_uri('./images/logonapis5.png');?>"
                     alt="logo">
             </div>
 
