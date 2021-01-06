@@ -6,8 +6,8 @@
 
 
 <main class="latest">
-    <div class="latest__news">
-        <h1 class="news-title">Najnowsze aktualności</h1>
+    <div class="latest__container">
+        <h1 class="header__title">Najnowsze aktualności</h1>
 
         <?php 
 
@@ -18,7 +18,7 @@
 while($news -> have_posts()){
     $news -> the_post(); 
  ?>
-        <div class="single-news">
+        <div class="latest__container_item">
             <div class="date-container">
                 <span class="day"><?php echo get_the_date('j') ?></span>
                 <span class="month"><?php echo get_the_date('M') ?></span>
@@ -30,7 +30,7 @@ while($news -> have_posts()){
                 </p>
             </div>
 
-            <a class="single-news arrow" href="<?php the_permalink(); ?>">
+            <a class="arrow" href="<?php the_permalink(); ?>">
                 <div class="circle"><i class="fas fa-angle-right"></i>
                 </div>
             </a>
@@ -46,8 +46,8 @@ while($news -> have_posts()){
     </div>
 
 
-    <div class="latest__blog">
-        <h1 class="blog-title">Najnowsze wpisy na blogu</h1>
+    <div class="latest__container latest__container--blog">
+        <h1 class="header__title header__title--blog">Najnowsze wpisy na blogu</h1>
         <?php 
             $blogposts = new WP_Query(array(
                 'posts_per_page' => 3,
@@ -61,7 +61,7 @@ while($news -> have_posts()){
 
 
 
-        <div class="single-post">
+        <div class="latest__container_item">
             <div class="date-container">
                 <span class="day"><?php echo get_the_date('j') ?></span>
                 <span class="month"><?php echo get_the_date('M') ?></span>
@@ -73,8 +73,8 @@ while($news -> have_posts()){
                 </p>
             </div>
 
-            <a class="single-post arrow" href="<?php the_permalink(); ?>">
-                <div class="circle"><i class="fas fa-angle-right"></i>
+            <a class="arrow" href="<?php the_permalink(); ?>">
+                <div class="circle circle--blog"><i class="fas fa-angle-right"></i>
                 </div>
             </a>
 
