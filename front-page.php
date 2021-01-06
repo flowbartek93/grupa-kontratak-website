@@ -92,19 +92,19 @@ while($news -> have_posts()){
 
 
 
-<section class="section-two">
+<section class="about-us">
     <div class="section-divider">
         <p>O nas</p>
     </div>
-    <div class="section-two__content">
-        <div class="section-two__photo">
+    <div class="about-us__content">
+        <div class="about-us__photo">
             <img src="<?php echo get_theme_file_uri('images/my.jpg') ?>" alt="">
         </div>
-        <div class="section-two__description">
+        <div class="about-us__container">
 
-            <p class="section-two__description_title">Witamy na naszej stronie !</p>
 
-            <p class="section-two__description_aboutus"> Jesteśmy grupą ludzi zafascynowanych sztukami walki i ruchem.
+
+            <p class="description"> Jesteśmy grupą ludzi zafascynowanych sztukami walki i ruchem.
                 Grupa Kontratak to projekt utkany z pasji,
                 marzeń i
                 ekspoloracji różnych sztuk, systemów walki i ruchu.
@@ -127,21 +127,6 @@ while($news -> have_posts()){
 
 
             </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         </div>
 
