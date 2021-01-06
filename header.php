@@ -34,7 +34,6 @@
 
     <nav class="nav">
 
-
         <!-- Napisz nowe style dla menu -->
         <ul class="list__item">
             <li class="list__item-single <?php if (is_page('home')) echo 'active'?> "><a class="link"
@@ -45,25 +44,32 @@
             <li class="list__item-single <?php if (is_page('galeria')) echo 'active'?>">
                 <a class="link" href=<?php echo site_url('galeria') ?>>Galeria</a>
             </li>
-            <li class="list__item-single wrapper">
+            <li class="list__item-single collapse-menu">
                 <a class="link">Treningi</a>
-                <ul>
-                    <a class="link" href="<?php echo site_url('treningi/metodyka') ?>">
-                        <li>Nasza metodyka</li>
-                    </a>
-                    <a class="link" href="<?php echo site_url('treningi/trenerzy') ?>">
-                        <li>Trenerzy</li>
-                    </a>
-                    <a class="link" href="">
-                        <li>Lokalizacja</li>
-                    </a>
-                </ul>
+
             </li>
+            <ul class="list__collapse">
+
+                <li class="list__collapse-item"><a class="link"
+                        href="<?php echo site_url('treningi/metodyka'); ?>">Nasza
+                        metodyka</a></li>
+                <li class="list__collapse-item"><a class="link"
+                        href="<?php echo site_url('treningi/trenerzy'); ?>">Skład
+                        trenerski</a></li>
+                <li class="list__collapse-item"><a class="link"
+                        href="<?php echo site_url('treningi/lokalizacja'); ?>">Lokalizacja</a>
+                </li>
+
+
+
+            </ul>
             <li class="list__item-single <?php if (is_page('blog')) echo 'active'?>"><a class="link"
                     href="<?php echo get_post_type_archive_link('blog') ?>">Blog</a></li>
 
-            <li class="list__item-single <?php if (is_page('kontakt')) echo 'active'?>"><a class="link"
-                    href="<?php echo site_url('kontakt')?>">Kontakt</a></li>
+
+
+
+
 
         </ul>
 
