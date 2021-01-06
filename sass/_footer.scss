@@ -7,15 +7,11 @@
 
 
     &__container {
-        display: grid;
-        grid-template-columns: 400px 1fr 400px;
-        grid-template-rows: 1fr;
+        display: flex;
+        flex-direction: column;
     }
 
-    &__nav {
-        margin-left: 50px;
-        margin-top: 10px;
-    }
+
 
     &__ulist {
 
@@ -52,9 +48,10 @@
     }
 
     &__copyright {
-        grid-column-start: 2;
+
         text-align: center;
         color: white;
+
     }
 
 
@@ -65,7 +62,7 @@
 
         .icons {
             display: flex;
-            width: 60%;
+            width: 100%;
             justify-content: space-around;
 
 
