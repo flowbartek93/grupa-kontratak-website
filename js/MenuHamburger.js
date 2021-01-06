@@ -30,6 +30,7 @@ class MenuHamburger {
         } else {
             this.mainMenu.style.height = "0px";
             this.subMenuTrainings.classList.remove('list__collapse--collapsed')
+            this.subMenuTrainings.style.height = "0px"
         }
 
     }
