@@ -66,35 +66,39 @@
 
 
 
-.section-one {
+.our-partners {
 
-    .partner-logos {
+    &__container {
         margin: 2rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        gap: 50px;
-        place-items: center;
-
-        &__item {
-
-            img {
-                height: 200px;
-                filter: grayscale(100%);
-                transition: 0.2s;
-            }
-
-            img:hover {
-                filter: grayscale(0%);
-                cursor: pointer;
-            }
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
 
 
+
+
+
+
+    }
+
+
+
+    &__item {
+
+        flex-basis: 100%;
+
+
+        img {
+            max-width: 100%;
+            filter: grayscale(100%);
+            transition: 0.2s;
         }
 
-
-
-
+        img:hover {
+            filter: grayscale(0%);
+            cursor: pointer;
+        }
 
     }
 }

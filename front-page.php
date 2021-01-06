@@ -136,23 +136,23 @@ while($news -> have_posts()){
 
 
 
-<section class="section-one">
+<section class="our-partners">
     <div class="section-divider">
         <p>Nasi partnerzy</p>
     </div>
 
-    <div class="partner-logos">
+    <div class="our-partners__container">
 
-        <div class="partner-logos__item">
+        <div class="our-partners__item">
             <a href="https://azsus.pl/" target="_blank"><img src="<?php echo get_theme_file_uri('images/azs.png') ?>"
                     alt=""></a>
 
         </div>
-        <div class="partner-logos__item">
+        <div class="our-partners__item">
             <a href="http://www.combatsystema.com/home.html" target="_blank"><img
                     src="<?php echo get_theme_file_uri('images/combatsystema.png') ?>" alt=""></a>
         </div>
-        <div class="partner-logos__item">
+        <div class="our-partners__item">
             <a href="https://www.facebook.com/SystemaRyabkoPolska/" target="_blank"><img
                     src="<?php echo get_theme_file_uri('images/ryabkopolska.png') ?>" alt=""></a>
         </div>
